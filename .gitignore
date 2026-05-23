@@ -1,6 +1,8 @@
+# Ignore user-specific IDE settings
 *.user
-impl/gwsynthesis/
-impl/temp/
+
+# Ignore ALL auto-generated synthesis, routing, and temp files
+impl/
+
+# Ignore log files
 *.log
-# If you want to provide the ready-to-flash file for others, comment this out:
-impl/pnr/*.fs
