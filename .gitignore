@@ -1,0 +1,6 @@
+*.user
+impl/gwsynthesis/
+impl/temp/
+*.log
+# If you want to provide the ready-to-flash file for others, comment this out:
+impl/pnr/*.fs
