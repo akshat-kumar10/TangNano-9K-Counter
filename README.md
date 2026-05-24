@@ -17,7 +17,7 @@ The design is entirely synchronous and relies on a hierarchical module structure
 3. **Priority Logic Logic:** Implements an explicit logic tree where the Reset condition holds strict priority over the Count condition, holding the state at zero regardless of conflicting inputs.
 
 ### State-Driven Behavior
-* **Hold Key 1:** The 6-bit LED array auto-increments at ~4 ticks per second.
+* **Hold Key 1:** The 6-bit LED array auto-increments at ~4 ticks per second, counting in binary.
 * **Hold Key 2:** The system resets to `000000` (Priority override).
 * **Release:** The system cleanly holds its current state.
 
@@ -25,7 +25,8 @@ The design is entirely synchronous and relies on a hierarchical module structure
 
 ### Prerequisites
 * **Gowin EDA:** V1.9.11.03 (Education Version) or later.
-* **Programmer:** Zadig configured with `WinUSB` on Interface 0 (for Composite Device recognition).
+* **Programmer:** Zadig configured with `WinUSB` on Interface 0 (for Composite Device recognition) - Install zadig at zadig.akeo.ie
+* *If you see "Interface 0" and "Interface 1" options, select Interface 0 (Interface 0 handles the JTAG programming, Interface 1 handles UART serial communication).*
 
 ### Build Instructions
 1. Clone this repository to your local machine.
